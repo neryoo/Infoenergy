@@ -1,0 +1,310 @@
+/* estilo navbar*/
+
+.nav.container-fluid{
+  background-image: url(../header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 63.82vw;
+}
+.logo{
+  width: 14.63vw;
+  height: 12.43vw;
+}
+.busca{
+  max-width: 100%;
+  width: 25.66vw;
+  height: 4.41vw;
+}
+.navbutton1{
+font-family: Roboto;
+color: #eee0e0;
+font-size: 3vw;
+font-weight: bold;
+}
+.navbutton2{
+font-family: Roboto;
+color: #eee0e0;
+font-size: 3vw; 
+font-weight: bold;
+}
+.input-container {
+  width: 25vw;
+  height: 3.8vw;
+  display: flex;
+  background: white;
+  border-radius: 1rem;
+}
+
+.input-container input {
+  border-radius: 0.8rem;
+  background: white;
+  width: 100%;
+  flex-basis: 100%;
+  border: none;
+  border: 0.073vw solid transparent;
+  color: black;
+  font-size: clamp(12px,2vw,100px);
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container input:focus {
+  border: 0.073vw solid white;
+  outline: none;
+  box-shadow:
+    inset 0px 0px 0.73vw white,
+    inset 0px 0px 0.73vw white,
+    0px 0px 7.35vw white,
+    0px 0px 7.35vw white;
+}
+main{
+  background-color:#bcdbd1 ;
+}
+
+/*Titulo principal (h1)*/
+
+.tituloprincipal{
+  text-align: left;
+  color: #125540;
+  font-family: Poppins;
+  font-size: clamp(18px,2.64vw,240px);
+}
+
+.titulo{
+  font-family: Poppins;
+  font-size: clamp(18px,2.64vw,240px);
+  position: relative;
+  color: #125540;
+  text-align: center;
+  
+}
+
+/*Subtitulo*/
+
+
+/*imagem infoenergy*/
+
+
+
+/*Imagem ENERGIAS*/
+
+.logocima{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+} 
+
+
+
+/* Estilos cards Tecnologias */
+.secao4 {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    a{
+      color: white;
+}
+}
+.secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.secao4-div-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3 - 60px);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #125540;
+    transition: all 0.5s ease;
+}
+
+.secao4-div-card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.secao4-div-card img {
+    width: 35%;
+    height: auto;
+}
+
+.secao4-div-card h3 {
+    margin-bottom: 0px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .secao4-div-card {
+        width: 100%;
+    }
+}
+
+
+/*CARDS DESENVOLVEDORES */
+
+
+
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background:#125540;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+ 
+  /*ACHO QUE O PROBLEMA DE LINK TA AQUI*/
+
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+  article a:focus {
+    outline: 1px dotted #28666e;
+  }
+  
+  article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  }
+  
+  
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: white;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  
+  
+
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  
+
+  /* footercima*/
+.footeru{
+  background-image: url(../footercima.png);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.logof{
+  width:  clamp(200px,30.88vw,2000px);
+  height: clamp(116px,18.3vw,1160px);}
+.contentf{
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size:  clamp(12px, 2vw, 100px);
+ }
+.linklist{
+  font-family: Roboto;
+  font-size:  clamp(12px, 2vw, 100px);
+  color: #FFFFFF;
+}
+.uparrow{
+  position: relative;
+  top: 3.67vw;
+  width: clamp(24px,3.82vw,240px);
+  height: clamp(28px,4.37vw,280px);
+}
+.etecl{
+  position: relative;
+  bottom: 5vh;
+  width: clamp(150px,23.38vw,1500px);
+  height: clamp(100px,16.39vw,1000px);
+}
+
+/*footer baixo*/
+.footerb{
+  width: 100%;
+  height: 100%;
+  background-color: #353b39;
+}
+.contentf,.termos,.direitos,.rua,.cep,.telefone{
+  color: #FFFFFF;
+  font-family: mulish;
+  font-size:  clamp(12px, 2vw, 100px);
+ }
+.facelogo,.instalogo,.twitterlogo{
+  width: clamp(18px,2.94vw,100px);
+  height: clamp(15px,2vw,80px);
+ }
